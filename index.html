@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RafaCraft</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="netherParticles"></canvas>
+<div id="minecraftLoader">
+  <div class="logo">RafaCraft</div>
+  <div class="loading">Cargando<span class="dots">...</span></div>
+</div>
+<audio id="bgMusic" autoplay loop>
+  <source src="https://files.catbox.moe/9xpzom.mp3" type="audio/mpeg">
+  Tu navegador no soporta audio.
+</audio>
+  <div class="container" id="mainContent">
+    <h1>Bienvenido a <span>RafaCraft</span></h1>
+    <p class="subtitle">Servidor IP: <strong id="ipText">rafacraft.falixsrv.me:28184</strong></p>
+
+    <button onclick="conectar()">🎮 Conectar al servidor</button>
+    <button onclick="copiarIP()" class="copyBtn">📋 Copiar IP</button>
+<input type="text" placeholder="Ingresa tu nick" oninput="mostrarSkin(this.value)">
+<img id="playerSkin" src="" style="display:none; width: 100px; margin-top: 10px;">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+<section class="seccion" data-aos="fade-up">...</section>
+<iframe src="https://api.mcstatus.io/v2/widget/java/rafacraft.falixsrv.me:28184" width="100%" height="200" style="border:none;"></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+</body>
+</html>
