@@ -1,5 +1,5 @@
 function conectar() {
-  window.location.href = "minecraft://rafacraft.falixsrv.me:28184";
+  window.location.href = "minecraft://AmongUsCraftOk.aternos.me:44763";
 }
 
 function copiarIP() {
